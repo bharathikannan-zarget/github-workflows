@@ -9,15 +9,15 @@ import org.apache.commons.io.filefilter.DirectoryFileFilter;
 import org.apache.commons.io.filefilter.NotFileFilter;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
 
-/**
- * @author bk
- */
+/** @author bk */
 public class FileUtil {
 
   public static void listFiles(String dir) {
-    Collection<File> files = FileUtils.listFiles(new File(dir),
-        new WildcardFileFilter("*.txt", IOCase.SENSITIVE),
-        new NotFileFilter(DirectoryFileFilter.DIRECTORY));
+    Collection<File> files =
+        FileUtils.listFiles(
+            new File(dir),
+            new WildcardFileFilter("*.txt", IOCase.SENSITIVE),
+            new NotFileFilter(DirectoryFileFilter.DIRECTORY));
 
     files.stream().forEach(System.out::println);
   }
@@ -39,5 +39,4 @@ public class FileUtil {
 
     FileUtils.copyFileToDirectory(file2, docs);
   }
-
 }
