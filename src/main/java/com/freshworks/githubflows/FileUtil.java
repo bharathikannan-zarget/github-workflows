@@ -39,4 +39,10 @@ public class FileUtil {
 
     FileUtils.copyFileToDirectory(file2, docs);
   }
+
+  public void deleteFile(File f) {
+    if(f.exists()) {
+      f.delete();
+    }
+  }
 }
