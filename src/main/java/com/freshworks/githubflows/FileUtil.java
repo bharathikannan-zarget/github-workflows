@@ -41,7 +41,7 @@ public class FileUtil {
   }
 
   public void deleteFile(File f) {
-    if(f.exists()) {
+    if (f.exists()) {
       f.delete();
     }
   }
