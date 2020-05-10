@@ -22,6 +22,10 @@ public class FileUtil {
     files.stream().forEach(System.out::println);
   }
 
+  public static void print(String str) {
+	System.out.println("Hello");
+  } 
+
   public static void copyFile(File file1, File file2) throws IOException {
 
     FileUtils.copyFile(file1, file2);
