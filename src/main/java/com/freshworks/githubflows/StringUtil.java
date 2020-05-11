@@ -6,4 +6,11 @@ public class StringUtil {
     if (s == null || s.isEmpty()) return true;
     else return false;
   }
+
+  public boolean isValid(String s) {
+	if(s != null && s.length() > 0)
+		return true;
+	else
+		return false;
+  }
 }
