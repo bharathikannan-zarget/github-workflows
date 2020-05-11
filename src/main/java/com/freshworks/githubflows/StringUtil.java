@@ -8,9 +8,7 @@ public class StringUtil {
   }
 
   public boolean isValid(String s) {
-	if(s != null && s.length() > 0)
-		return true;
-	else
-		return false;
+    if (s != null && s.length() > 0) return true;
+    else return false;
   }
 }
